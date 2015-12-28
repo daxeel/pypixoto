@@ -1,8 +1,7 @@
 import pypixoto
 
 # Create main Pixoto object with Username of user whose you want to get data
-obj = pixotopy.Pixoto('ron.maxie')
-
+obj = pypixoto.Pixoto('ron.maxie')
 
 full_name = obj.full_name() # full name of user
 
@@ -21,3 +20,5 @@ n_images = obj.n_images() # number of images posted
 n_followers = obj.n_followers() # number of followers 
 
 n_following = obj.n_following() # number of following users 
+
+img_info = obj.get_images(3, ['title', 'description']) # getting recent 3 images title in description
