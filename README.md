@@ -9,7 +9,7 @@ I have searched for official API or SDK for pixoto.com but not found anything fr
 
 # Installation
 ## Installation of dependency
-pypixoto is using beautifulsoup4. So, before installing pypixoto you need to install beautifulsoup.
+pypixoto is using beautifulsoup4. So, before installing pypixoto you need to install beautifulsoup.<br>
 <code>pip install beautifulsoup4</code>
 ## Installation of pypixoto
 ##### Install using pip
