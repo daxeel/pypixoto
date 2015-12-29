@@ -20,7 +20,7 @@ STEP 1 : Clone this repository<br>
 STEP 2 : Change working directory<br>
 <code>cd pypixoto</code><br><br>
 STEP 3 : Install pypixoto using setip.py<br>
-<code>python setup.py install</code><br><br>
+<code>python setup.py install</code>
 
 # Documentation
 Now you are ready to work with pypixoto.
