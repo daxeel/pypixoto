@@ -36,6 +36,8 @@ from bs4 import BeautifulSoup
 import urllib2
 import json
 
+version = 1.0
+
 # MAIN CLASS
 class Pixoto(object):
 	"""docstring for Pixoto"""
