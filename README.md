@@ -1,3 +1,5 @@
+<a href="https://badge.fury.io/py/pypixoto"><img src="https://badge.fury.io/py/pypixoto.svg" alt="PyPI version" height="18"></a>
+
 # pypixoto
 Python SDK for accessing data of Pixoto.com
 
