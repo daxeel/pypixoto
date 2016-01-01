@@ -6,6 +6,7 @@
 Python SDK for accessing data of Pixoto.com
 
 # What is Pixoto.com?
+<img src="https://datafox-data.s3.amazonaws.com/images/cb_9262edc8f8b67bc66e2bad8bfa60dd4a.png" height="150"><br>
 Pixoto.com is an online world famous photo sharing social network for photographers similar to 500px.com, flickr etc. Check out its site for more information.
 
 # Why this project (pypixoto)?
