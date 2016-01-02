@@ -29,7 +29,9 @@ STEP 1 : Clone this repository<br>
 git clone https://github.com/daxeel/pypixoto.git
 ```
 STEP 2 : Change working directory<br>
-<code>cd pypixoto</code><br><br>
+```sh
+cd pypixoto
+```
 STEP 3 : Install pypixoto using setip.py<br>
 ```sh
 python setup.py install
@@ -40,54 +42,54 @@ Now you are ready to work with pypixoto.
 ### Getting the user's information
 ##### Initialize pypixoto with targeted username
 ```py
-obj = pypixoto.Pixoto('USERNAME')
+>>> obj = pypixoto.Pixoto('USERNAME')
 ```
 ##### Now, let's get the full name of this user
 ```py
-pyobj.full_name()
+>>> pyobj.full_name()
 ```
 ##### Biography of user
 ```py
-pyobj.about()
+>>> pyobj.about()
 ```
 ##### Location of user
 <p>User's country</p>
 ```py
-pyobj.location('country')
+>>> pyobj.location('country')
 ```
 <p>User's region</p>
 ```py
-pyobj.location('region')
+>>> pyobj.location('region')
 ```
 <p>User's locality</p>
 ```py
-pyobj.location('locality')
+>>> pyobj.location('locality')
 ```
 ##### Number of awards awarded to user
 ```py
-pyobj.n_awards()
+>>> pyobj.n_awards()
 ```
 ##### Number of points collected by user
 ```py
-pyobj.n_points()
+>>> pyobj.n_points()
 ```
 ##### Number of images posted by user
 ```py
-pyobj.n_images()
+>>> pyobj.n_images()
 ```
 ##### Number of followers
 ```py
-pyobj.n_followers()
+>>> pyobj.n_followers()
 ```
 ##### Number of following
 ```py
-pyobj.n_following()
+>>> pyobj.n_following()
 ```
 
 ### Getting the information of user's published photos
 ##### Syntax
 ```py
-obj.get_images_info(N, LIST)
+>>> obj.get_images_info(N, LIST)
 ```
 Here, N = Information of how much images you want to get <br>
 LIST = List of required information <br><br>
