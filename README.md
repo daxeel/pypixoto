@@ -15,48 +15,80 @@ I have searched for official API or SDK for pixoto.com but not found anything fr
 # Installation
 ## Installation of dependency
 pypixoto is using beautifulsoup4. So, before installing pypixoto you need to install beautifulsoup.<br>
-<code>pip install beautifulsoup4</code>
+```sh
+pip install beautifulsoup4
+```
 ## Installation of pypixoto
 ##### Install using pip
-<code>pip install pypixoto</code>
+```sh
+pip install pypixoto
+```
 ##### Install using setup.py
 STEP 1 : Clone this repository<br>
-<code>git clone https://github.com/daxeel/pypixoto.git</code><br><br>
+```sh
+git clone https://github.com/daxeel/pypixoto.git
+```
 STEP 2 : Change working directory<br>
 <code>cd pypixoto</code><br><br>
 STEP 3 : Install pypixoto using setip.py<br>
-<code>python setup.py install</code>
+```sh
+python setup.py install
+```
 
 # Documentation
 Now you are ready to work with pypixoto.
 ### Getting the user's information
 ##### Initialize pypixoto with targeted username
-<code>obj = pypixoto.Pixoto('USERNAME')</code>
+```py
+obj = pypixoto.Pixoto('USERNAME')
+```
 ##### Now, let's get the full name of this user
-<code>obj.full_name()</code>
+```py
+pyobj.full_name()
+```
 ##### Biography of user
-<code>obj.about()</code>
+```py
+pyobj.about()
+```
 ##### Location of user
 <p>User's country</p>
-<code>obj.location('country')</code>
+```py
+pyobj.location('country')
+```
 <p>User's region</p>
-<code>obj.location('region')</code>
+```py
+pyobj.location('region')
+```
 <p>User's locality</p>
-<code>obj.location('locality')</code>
+```py
+pyobj.location('locality')
+```
 ##### Number of awards awarded to user
-<code>obj.n_awards()</code>
+```py
+pyobj.n_awards()
+```
 ##### Number of points collected by user
-<code>obj.n_points()</code>
+```py
+pyobj.n_points()
+```
 ##### Number of images posted by user
-<code>obj.n_images()</code>
+```py
+pyobj.n_images()
+```
 ##### Number of followers
-<code>obj.n_followers()</code>
+```py
+pyobj.n_followers()
+```
 ##### Number of following
-<code>obj.n_following()</code>
+```py
+pyobj.n_following()
+```
 
 ### Getting the information of user's published photos
 ##### Syntax
-<code>obj.get_images_info(N, LIST)</code><br><br>
+```py
+obj.get_images_info(N, LIST)
+```
 Here, N = Information of how much images you want to get <br>
 LIST = List of required information <br><br>
 You can pass the following items to LIST 
