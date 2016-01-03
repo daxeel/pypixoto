@@ -8,28 +8,6 @@
 #
 # Copyright (c) 2015, Daxeel Soni
 # All rights reserved.
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions are met:
-#     * Redistributions of source code must retain the above copyright
-#       notice, this list of conditions and the following disclaimer.
-#     * Redistributions in binary form must reproduce the above copyright
-#       notice, this list of conditions and the following disclaimer in the
-#       documentation and/or other materials provided with the distribution.
-#     * Neither the name of the author nor the names of its contributors may
-#       be used to endorse or promote products derived from this software
-#       without specific prior written permission.
-#
-# THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS``AS IS'' AND ANY
-# EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-# DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY
-# DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-# ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # IMPORT SECTION
 from bs4 import BeautifulSoup
@@ -111,14 +89,14 @@ class Pixoto(object):
 						elif each_required == 'description':temp['description'] = str(data[each]['description'])
 						elif each_required == 'category':temp['category'] = str(data[each]['category']['name'])
 						elif each_required == 'subcategory':temp['subcategory'] = str(data[each]['subCategory']['name'])
-						elif each_required == 'tags':temp['tags'] = str(data[each]['tags'])
+						elif each_required == 'tags':temp['tags'] = data[each]['tags']
 						elif each_required == 'date_published':temp['date_published'] = str(data[each]['publishedDateFormatted'])
 						elif each_required == 'date_taken':temp['date_taken'] = str(data[each]['shotDateFormatted'])
 						elif each_required == 'image_url':temp['image_url'] = str(data[each]['url'])
 						elif each_required == 'data_url':temp['data_url'] = "http://www.pixoto.com/" + str(data[each]['detailUrl'])
-						elif each_required == 'wins':temp['wins'] = str(data[each]['wins'])
-						elif each_required == 'losses':temp['losses'] = str(data[each]['losses'])
-						elif each_required == 'completed_duels':temp['completed_duels'] = str(data[each]['completedDuels'])
+						elif each_required == 'wins':temp['wins'] = data[each]['wins']
+						elif each_required == 'losses':temp['losses'] = data[each]['losses']
+						elif each_required == 'completed_duels':temp['completed_duels'] = data[each]['completedDuels']
 						elif each_required == 'rating':temp['rating'] = str(data[each]['rating'])
 						elif each_required == 'cam_company':temp['cam_company'] = str(data[each]['make'])
 						elif each_required == 'cam_model':temp['cam_model'] = str(data[each]['camera'])
@@ -126,8 +104,8 @@ class Pixoto(object):
 						elif each_required == 'shutter_speed':temp['shutter_speed'] = str(data[each]['shutterSpeed'])
 						elif each_required == 'aperture':temp['aperture'] = str(data[each]['aperture'])
 						elif each_required == 'iso_film':temp['iso_film'] = str(data[each]['isoFilm800'])
-						elif each_required == 'width':temp['width'] = str(data[each]['width'])
-						elif each_required == 'height':temp['height'] = str(data[each]['height'])
+						elif each_required == 'width':temp['width'] = data[each]['width']
+						elif each_required == 'height':temp['height'] = data[each]['height']
 					final.append(temp)						
 				return final
 			else:
