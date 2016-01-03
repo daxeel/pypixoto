@@ -182,7 +182,7 @@ You can pass the following items to LIST
 
 ##### Example 1
 ```py
->>> img_info = obj.get_images_info(3, ['title', 'description'])
+>>> img_info = obj.get_recent_images(3, ['title', 'description'])
 >>> print img_info
 [{
 	'description': 'None',
