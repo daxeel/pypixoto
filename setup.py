@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='pypixoto',
-      version='1.0',
+      version='1.1',
       description='Python SDK for accessing the data from pixoto.com',
       author='Daxeel Soni',
       author_email='sayhi@daxeelsoni.in',

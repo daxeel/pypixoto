@@ -2,7 +2,7 @@
 <a href="https://pypi.python.org/pypi/pypixoto/1.0"><img src="https://img.shields.io/pypi/dm/pypixoto.svg" alt="PyPI downloads" height="22"></a>
 <a href="https://pypi.python.org/pypi/pypixoto/1.0"><img src="https://img.shields.io/pypi/format/pypixoto.svg" alt="Format : Source" height="22"></a>
 
-# pypixoto
+# pypixoto V1.1
 Python SDK for accessing data of Pixoto.com
 
 # What is Pixoto.com?
