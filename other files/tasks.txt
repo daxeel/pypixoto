@@ -1,6 +1,0 @@
-1. change data types
-- tags > remove str()
-- losses, completed_duels, wins, height, width > int -> DONE
-
-2. Remove pixoto logo from README.md -> DONE
-
