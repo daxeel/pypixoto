@@ -67,7 +67,7 @@ class Pixoto(object):
 		return int(self.soup.find_all('h3', {'class': 'following'})[0].span.string)
 
 	# Get information of images published by user
-	def get_images(self, no_of_images, required_list):
+	def get_recent_images(self, no_of_images, required_list):
 		img_info_lst = ['title', 'description', 'category', 'subcategory', 'tags', 'date_published', 'date_taken', 'image_url', 'data_url', 'wins', 'losses', 'completed_duels', 'rating', 'cam_company', 'cam_model', 'focal_length', 'shutter_speed', 'aperture', 'iso_film', 'width', 'height']
 
 		tot_images = self.n_images()
