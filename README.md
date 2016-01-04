@@ -17,10 +17,18 @@ pypixoto is using beautifulsoup4. So, before installing pypixoto you need to ins
 ```sh
 pip install beautifulsoup4
 ```
+OR
+```sh
+sudo pip install beautifulsoup4
+```
 ## Installation of pypixoto
 ##### Install using pip
 ```sh
 pip install pypixoto
+```
+OR
+```sh
+sudo pip install pypixoto
 ```
 ##### Install using setup.py
 STEP 1 : Clone this repository<br>
