@@ -3,10 +3,9 @@
 # MODULE NAME  : pypixoto
 # DESCRIPTION  : Python SDK for accessing data of Pixoto.com
 # AUTHOR       : Daxeel Soni
-# AUTHOR EMAIL : sayhi@daxeelsoni.in
-# AUTHOR WEB   : www.daxeelsoni.in
-#
-# Copyright (c) 2015, Daxeel Soni
+# AUTHOR EMAIL : daxeelsoni44@gmail.com
+# AUTHOR WEB   : www.getprattle.com/daxeelsoni
+# Copyright (c) 2017, Daxeel Soni
 # All rights reserved.
 
 # IMPORT SECTION
