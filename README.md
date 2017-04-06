@@ -49,7 +49,7 @@ Now you are ready to work with pypixoto.
 ### Getting the user's information
 ##### Initialize pypixoto with targeted username
 ```py
->>> obj = pypixoto.Pixoto('USERNAME')
+>>> pyobj = pypixoto.Pixoto('USERNAME')
 ```
 ##### Now, let's get the full name of this user
 ```py
@@ -96,7 +96,7 @@ Now you are ready to work with pypixoto.
 ### Getting the information of user's published photos
 ##### Syntax
 ```py
->>> obj.get_images_info(N, LIST)
+>>> pyobj.get_images_info(N, LIST)
 ```
 Here, N = Information of how much images you want to get <br>
 LIST = List of required information <br><br>
@@ -190,7 +190,7 @@ You can pass the following items to LIST
 
 ##### Example 1
 ```py
->>> img_info = obj.get_recent_images(3, ['title', 'description'])
+>>> img_info = pyobj.get_recent_images(3, ['title', 'description'])
 >>> print img_info
 [{
 	'description': 'None',
@@ -205,7 +205,7 @@ You can pass the following items to LIST
 ```
 ##### Example 2
 ```py
->>> img_info = obj.get_images_info(3, ['title', 'description', 'category', 'subcategory', 'tags', 'date_published', 'date_taken', 'image_url', 'data_url', 'wins', 'losses', 'completed_duels', 'rating', 'cam_company', 'cam_model', 'focal_length', 'shutter_speed', 'aperture', 'iso_film', 'width', 'height'])
+>>> img_info = pyobj.get_images_info(3, ['title', 'description', 'category', 'subcategory', 'tags', 'date_published', 'date_taken', 'image_url', 'data_url', 'wins', 'losses', 'completed_duels', 'rating', 'cam_company', 'cam_model', 'focal_length', 'shutter_speed', 'aperture', 'iso_film', 'width', 'height'])
 >>> print img_info
 [{
 	'category': 'Landscapes',
