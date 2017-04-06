@@ -59,16 +59,15 @@ Now you are ready to work with pypixoto.
 ```py
 >>> pyobj.about()
 ```
-##### Location of user
-<p>User's country</p>
+##### Location of user (country)
 ```py
 >>> pyobj.location('country')
 ```
-<p>User's region</p>
+##### Location of user (region)
 ```py
 >>> pyobj.location('region')
 ```
-<p>User's locality</p>
+##### Location of user (localoty)
 ```py
 >>> pyobj.location('locality')
 ```
